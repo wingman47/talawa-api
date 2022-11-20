@@ -9,7 +9,15 @@ import {
   USER_NOT_FOUND_MESSAGE,
   USER_NOT_FOUND_PARAM,
 } from "../../../constants";
-
+/**
+ * This function adds User Image.
+ * @param _parent - parent of current request
+ * @param args - payload provided with the request
+ * @param context - context of entire application
+ * @remarks The following checks are done:
+ * 1. If the current user exists
+ * @returns Updated User
+ */
 export const addUserImage: MutationResolvers["addUserImage"] = async (
   _parent,
   args,
