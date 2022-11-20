@@ -1,5 +1,9 @@
 import { gql } from "apollo-server-core";
 
+/**
+ * This graphql typedef defines the schema-definition and contains 
+ * the query logic for different kinds of suthentications.
+ */
 export const auth = gql`
   input LoginInput {
     email: String!

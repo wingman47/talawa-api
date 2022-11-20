@@ -1,5 +1,8 @@
 import { gql } from "apollo-server-core";
-
+/**
+ * This graphql typedef defines the schema-definition and contains 
+ * the query logic to interact with various types of chats.
+ */
 export const chat = gql`
   type DirectChat {
     _id: ID!
