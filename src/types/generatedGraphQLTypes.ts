@@ -78,6 +78,7 @@ export type Advertisement = {
   __typename?: 'Advertisement';
   _id?: Maybe<Scalars['ID']>;
   endDate: Scalars['Date'];
+  imageUrl?: Maybe<Scalars['String']>;
   link: Scalars['String'];
   name: Scalars['String'];
   orgId?: Maybe<Scalars['ID']>;
@@ -2265,6 +2266,7 @@ export type AddressResolvers<ContextType = any, ParentType extends ResolversPare
 export type AdvertisementResolvers<ContextType = any, ParentType extends ResolversParentTypes['Advertisement'] = ResolversParentTypes['Advertisement']> = {
   _id?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;
   endDate?: Resolver<ResolversTypes['Date'], ParentType, ContextType>;
+  imageUrl?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   link?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   name?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   orgId?: Resolver<Maybe<ResolversTypes['ID']>, ParentType, ContextType>;

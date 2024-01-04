@@ -27,6 +27,7 @@ input AddressInput {
 type Advertisement {
   _id: ID
   endDate: Date!
+  imageUrl: String
   link: String!
   name: String!
   orgId: ID

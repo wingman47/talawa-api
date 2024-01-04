@@ -15,6 +15,7 @@ export interface InterfaceAdvertisement {
   type: AdvertisementTypes;
   startDate: string;
   endDate: string;
+  imageUrl: string;
 }
 
 /**
@@ -46,6 +47,11 @@ export interface InterfaceAdvertisement {
  * @param  endDate - End date of the advertisement (type: Date)
  * Description: End date of the advertisement.
  */
+
+/**
+ * @param  imageUrl - URL of the advertisement image (type: String)
+ * Description: Images inside Advertisements.
+ */
 const advertisementSchema = new Schema({
   name: {
     type: String,
@@ -70,6 +76,9 @@ const advertisementSchema = new Schema({
   endDate: {
     type: Date,
     required: true,
+  },
+  imageUrl: {
+    type: String,
   },
 });
 

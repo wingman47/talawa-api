@@ -90,6 +90,7 @@ export const types = gql`
     type: String!
     startDate: Date!
     endDate: Date!
+    imageUrl: String
   }
 
   type ExtendSession {
